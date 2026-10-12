@@ -1,0 +1,170 @@
+========================================================================
+PAPER CLAIM VERIFICATION
+========================================================================
+
+[1] Totals (Table VII, Abstract)
+  [✔] total native events
+        actual   = 39187
+        expected = 39187
+  [✔] total checkpoints
+        actual   = 289
+        expected = 289
+
+[2] Per-device breakdown (Table VII)
+  [✔] dev-1 entries
+        actual   = 1452
+        expected = 1452
+  [✔] dev-1 checkpoints
+        actual   = 15
+        expected = 15
+  [✔] windows-1 entries
+        actual   = 10580
+        expected = 10580
+  [✔] windows-1 checkpoints
+        actual   = 1
+        expected = 1
+  [✔] offline-test entries
+        actual   = 510
+        expected = 510
+  [✔] offline-test checkpoints
+        actual   = 6
+        expected = 6
+  [✔] windows-live entries
+        actual   = 26645
+        expected = 26645
+  [✔] windows-live checkpoints
+        actual   = 267
+        expected = 267
+
+[3] Tier distribution (Table VIII)
+  [✔] dev-1 / high
+        actual   = 409
+        expected = 409
+  [✔] dev-1 / medium
+        actual   = 1043
+        expected = 1043
+  [✔] dev-1 / low
+        actual   = 0
+        expected = 0
+  [✔] windows-1 / high
+        actual   = 1081
+        expected = 1081
+  [✔] windows-1 / medium
+        actual   = 915
+        expected = 915
+  [✔] windows-1 / low
+        actual   = 8584
+        expected = 8584
+  [✔] offline-test / high
+        actual   = 144
+        expected = 144
+  [✔] offline-test / medium
+        actual   = 366
+        expected = 366
+  [✔] offline-test / low
+        actual   = 0
+        expected = 0
+  [✔] windows-live / high
+        actual   = 1796
+        expected = 1796
+  [✔] windows-live / medium
+        actual   = 3229
+        expected = 3229
+  [✔] windows-live / low
+        actual   = 21620
+        expected = 21620
+
+  [✔] aggregate HIGH
+        actual   = 3430
+        expected = 3430
+  [✔] aggregate MEDIUM
+        actual   = 5553
+        expected = 5553
+  [✔] aggregate LOW
+        actual   = 30204
+        expected = 30204
+  [✔] HIGH+MED+LOW = 39187
+        actual   = 39187
+        expected = 39187
+
+[4] Windows-live checkpoint segment size
+  [✔] windows-live checkpoint count
+        actual   = 267
+        expected = 267
+  [✔] min segment size
+        actual   = 45
+        expected = 45
+  [✔] max segment size
+        actual   = 100
+        expected = 100
+  [✔] mean segment size (round .1)
+        actual   = 99.8
+        expected = 99.8
+
+[5] Storage footprint (Table XIII)
+  [✔] SQLite file size (bytes)
+        actual   = 42975232
+        expected = 42975232
+  [✔] bytes per entry (round .1)
+        actual   = 1096.7
+        expected = 1096.7
+
+[6] Genesis test vector (Section E.2)
+  [✔] genesis hash
+        actual   = 6372ac2a3ba01dcfd144b8345e11d4e8f50ee0e4274d565e9251926a0ec2017da8ac3f08b51a3d6c04462e484ed8db794317a4fcac8920ca20e4da6527b67a7a
+        expected = 6372ac2a3ba01dcfd144b8345e11d4e8f50ee0e4274d565e9251926a0ec2017da8ac3f08b51a3d6c04462e484ed8db794317a4fcac8920ca20e4da6527b67a7a
+
+[7] Attack matrices (Table XII)
+  local matrix:
+    modification                             5000/5000
+    deletion                                 5000/5000
+    insertion_inside                         5000/5000
+    truncation (in-segment)                  100/100
+    post-cp insertion (o.o.s.)               0/100
+    cp continuity break                      100/100
+    low-tier batch tamper                    100/100
+    event_type tamper (o.o.s.)               0/100
+  anchored matrix:
+    modification (anchored)                  100/100
+    deletion (anchored)                      100/100
+    insertion_inside (anchored)              100/100
+    truncation in-segment (anchored)         100/100
+    post-cp insertion (o.o.s.)               0/100
+
+[8] Benchmark evidence files
+  [✔] bench_baselines.txt  (282 bytes)
+  [✔] benchmark_ci.txt  (633 bytes)
+  [✔] bench_verify_ci.txt  (267 bytes)
+  [✔] threshold_sensitivity.txt  (350 bytes)
+  [✔] tier_distribution.txt  (211 bytes)
+  [✔] storage_footprint.txt  (71 bytes)
+
+[9] Attack detection summary (matches Table XII)
+  [✔] modification (in-scope)
+        actual   = (5000, 5000)
+        expected = (5000, 5000)
+  [✔] deletion (in-scope)
+        actual   = (5000, 5000)
+        expected = (5000, 5000)
+  [✔] insertion_inside (in-scope)
+        actual   = (5000, 5000)
+        expected = (5000, 5000)
+  [!] not found in local matrix: truncation in-segment
+  [✔] post-cp insertion (out-of-scope)
+        actual   = (0, 100)
+        expected = (0, 100)
+  [✔] event_type tamper (out-of-scope)
+        actual   = (0, 100)
+        expected = (0, 100)
+  [✔] cp continuity break (in-scope)
+        actual   = (100, 100)
+        expected = (100, 100)
+  [✔] low-tier batch tamper (in-scope)
+        actual   = (100, 100)
+        expected = (100, 100)
+
+========================================================================
+TOTAL: 40 passed, 0 failed
+========================================================================
+
+Done. Copy this output for your records.

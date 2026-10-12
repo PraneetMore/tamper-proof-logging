@@ -1,0 +1,3 @@
+DB size: 42,975,232 bytes
+Total entries: 39187
+Bytes per entry: 1096.7

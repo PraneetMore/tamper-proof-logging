@@ -1,0 +1,6 @@
+dev-1: entries=1413, checkpoints=9, verified=True, fully_covered=True
+windows-1: entries=1181, checkpoints=2, verified=True, fully_covered=True
+offline-test: entries=510, checkpoints=2, verified=True, fully_covered=True
+windows-live: entries=2784, checkpoints=2, verified=True, fully_covered=True
+TOTAL entries: 5888
+TOTAL checkpoints: 15

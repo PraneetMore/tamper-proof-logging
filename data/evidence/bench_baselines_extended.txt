@@ -1,0 +1,6 @@
+mode             logs/sec    +- 95% CI   db size (MB)
+sha512             17,976        1,734          41.23
+blake2s            19,612          817          41.21
+adaptive           20,480          668          41.24
+keyed              17,396        1,735          41.22
+merkle            424,135      100,238           0.02

@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+.venv/
+
+# Backups
+*.backup
+*.bak
+
+# Secrets — NEVER commit
+data/chain_key.bin
+data/tls/*.key
+
+# SQLite sidecar files
+data/*.db-wal
+data/*.db-shm
+
+# ALL database files except the main one
+data/logs.db.backup*
+data/logs.db.before*
+data/logs.db.current-state
+
+# Benchmark temp DBs
+data/bench_*.db
+data/bench_*.db-wal
+data/bench_*.db-shm
+
+# Server store backups
+data/server_store_backup/
+
+# Internal verification outputs
+data/final_verification/
+data/final_evidence/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,7 @@
+Anchored-verification attack matrix
+
+  modification (anchored)                 detected  100/100  recall=100.00%
+  deletion (anchored)                     detected  100/100  recall=100.00%
+  insertion_inside (anchored)             detected  100/100  recall=100.00%
+  truncation in-segment (anchored)        detected  100/100  recall=100.00%
+  post-cp insertion (o.o.s.)              detected    0/100  recall=0.00%

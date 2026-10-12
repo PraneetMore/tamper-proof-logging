@@ -1,0 +1,5 @@
+dev-1           entries=  1452 checkpoints= 15 verified=True
+windows-1       entries= 10580 checkpoints=  1 verified=True
+offline-test    entries=   510 checkpoints=  6 verified=True
+windows-live    entries= 26645 checkpoints=267 verified=True
+Total native events: 39187

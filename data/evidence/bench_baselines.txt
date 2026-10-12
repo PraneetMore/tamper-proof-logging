@@ -1,0 +1,5 @@
+mode             logs/sec     ± 95% CI   db size (MB)
+sha512             17,475        1,197          41.23
+blake2s            18,793          882          41.23
+adaptive           18,608        1,270          41.19
+Raw SQLite:         440,581  ±     23,447 logs/sec   db=9.80 MB

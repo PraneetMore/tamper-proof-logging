@@ -1,0 +1,16 @@
+Attack-class test (5000 trials each)
+
+  modification                  detected 5000/5000  recall=100.00%
+  deletion                      detected 5000/5000  recall=100.00%
+  insertion_inside              detected 5000/5000  recall=100.00%
+  truncation (in-segment)       detected  100/100  recall=100.00%
+  post-cp insertion (o.o.s.)    detected    0/100  recall=0.00%
+  cp continuity break           detected  100/100  recall=100.00%
+  low-tier batch tamper         detected  100/100  recall=100.00%
+  event_type tamper (o.o.s.)    detected    0/100  recall=0.00%
+  control               false positives 0/5000  FPR=0.00%
+
+Documented out-of-scope attacks (not tested):
+  insertion outside segment
+  reordering of equal-length entries
+  truncation beyond last checkpoint

@@ -1,0 +1,34 @@
+{
+  "leaf_hashing": {
+    "sha512": {
+      "ops_per_sec": 930199.1402011139,
+      "us_per_op": 1.0750386199924833
+    },
+    "blake2s": {
+      "ops_per_sec": 1102625.0149624206,
+      "us_per_op": 0.9069266400001652
+    }
+  },
+  "chain_in_memory": {
+    "entries": 50000,
+    "elapsed_sec": 0.2540207570000348,
+    "logs_per_sec": 196834.3083080929
+  },
+  "persistent_pipeline": {
+    "entries": 50000,
+    "elapsed_sec": 2.844551551999757,
+    "logs_per_sec": 17577.463120627694,
+    "db_size_bytes": 43237376,
+    "batch_size": 1000
+  },
+  "tiered_pipeline": {
+    "entries": 50000,
+    "elapsed_sec": 3.1115471699999944,
+    "logs_per_sec": 16069.17628698526,
+    "tier_counts": {
+      "high": 20000,
+      "medium": 20000,
+      "low": 10000
+    }
+  }
+}

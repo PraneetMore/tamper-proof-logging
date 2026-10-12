@@ -1,0 +1,4 @@
+dev-1           {'high': 409, 'medium': 1043}
+windows-1       {'high': 1081, 'low': 8584, 'medium': 915}
+offline-test    {'high': 144, 'medium': 366}
+windows-live    {'high': 1796, 'low': 21620, 'medium': 3229}

@@ -1,0 +1,16 @@
+============================================================
+BENCHMARK WITH 95% CONFIDENCE INTERVALS (5 runs)
+============================================================
+
+[1] Leaf hashing (256-byte payload, 100,000 iterations, 5 runs)
+    sha512   :      912,611 +/-     33,702 ops/sec
+               1.097 +/- 0.040 us/op
+    blake2s  :    1,100,184 +/-     48,661 ops/sec
+               0.910 +/- 0.041 us/op
+
+[2] Chain in-memory (100,000 entries, 5 runs)
+         175,932 +/-      9,158 logs/sec
+
+[3] Persistent pipeline (50,000 entries, batch=1000, 5 runs)
+          16,684 +/-        763 logs/sec
+    DB size: 43,209,523 bytes

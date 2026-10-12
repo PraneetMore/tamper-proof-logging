@@ -1,0 +1,171 @@
+========================================================================
+PAPER CLAIM VERIFICATION
+========================================================================
+
+[1] Totals (Abstract, Table VII)
+[OK ] Total native entries
+       actual   = 39187
+       expected = 39187
+[OK ] Total checkpoints
+       actual   = 289
+       expected = 289
+
+[2] Per-device counts (Table VII)
+[OK ] dev-1           entries
+       actual   = 1452
+       expected = 1452
+[OK ] dev-1           checkpoints
+       actual   = 15
+       expected = 15
+[OK ] windows-1       entries
+       actual   = 10580
+       expected = 10580
+[OK ] windows-1       checkpoints
+       actual   = 1
+       expected = 1
+[OK ] offline-test    entries
+       actual   = 510
+       expected = 510
+[OK ] offline-test    checkpoints
+       actual   = 6
+       expected = 6
+[OK ] windows-live    entries
+       actual   = 26645
+       expected = 26645
+[OK ] windows-live    checkpoints
+       actual   = 267
+       expected = 267
+
+[3] Tier distribution (Table VIII)
+[OK ] dev-1           high  
+       actual   = 409
+       expected = 409
+[OK ] dev-1           medium
+       actual   = 1043
+       expected = 1043
+[OK ] dev-1           low   
+       actual   = 0
+       expected = 0
+[OK ] windows-1       high  
+       actual   = 1081
+       expected = 1081
+[OK ] windows-1       medium
+       actual   = 915
+       expected = 915
+[OK ] windows-1       low   
+       actual   = 8584
+       expected = 8584
+[OK ] offline-test    high  
+       actual   = 144
+       expected = 144
+[OK ] offline-test    medium
+       actual   = 366
+       expected = 366
+[OK ] offline-test    low   
+       actual   = 0
+       expected = 0
+[OK ] windows-live    high  
+       actual   = 1796
+       expected = 1796
+[OK ] windows-live    medium
+       actual   = 3229
+       expected = 3229
+[OK ] windows-live    low   
+       actual   = 21620
+       expected = 21620
+[OK ] aggregate HIGH
+       actual   = 3430
+       expected = 3430
+[OK ] aggregate MEDIUM
+       actual   = 5553
+       expected = 5553
+[OK ] aggregate LOW
+       actual   = 30204
+       expected = 30204
+[OK ] HIGH+MEDIUM+LOW
+       actual   = 39187
+       expected = 39187
+
+[4] windows-live checkpoint sizes (Section VI-A)
+[OK ] checkpoint count
+       actual   = 267
+       expected = 267
+[OK ] min segment size
+       actual   = 45
+       expected = 45
+[OK ] max segment size
+       actual   = 100
+       expected = 100
+[OK ] mean segment size (round 0.1)
+       actual   = 99.8
+       expected = 99.8
+[OK ] median segment size
+       actual   = 100
+       expected = 100
+
+[5] Storage footprint (Table XIII)
+[OK ] Main SQLite file size (bytes)
+       actual   = 42975232
+       expected = 42975232
+[OK ] Bytes per entry (round 0.1)
+       actual   = 1096.7
+       expected = 1096.7
+
+[6] Genesis test vector (Section IV-E.2)
+[OK ] genesis hash
+       actual   = 6372ac2a3ba01dcfd144b8345e11d4e8f50ee0e4274d565e9251926a0ec2017da8ac3f08b51a3d6c04462e484ed8db794317a4fcac8920ca20e4da6527b67a7a
+       expected = 6372ac2a3ba01dcfd144b8345e11d4e8f50ee0e4274d565e9251926a0ec2017da8ac3f08b51a3d6c04462e484ed8db794317a4fcac8920ca20e4da6527b67a7a
+
+[7] Checkpoint digest self-consistency
+[OK ] checkpoints recomputed
+       actual   = 289
+       expected = 289
+[OK ] digest mismatches
+       actual   = 0
+       expected = 0
+
+[8] JSONL store matches SQLite (Section V-E)
+[OK ] dev-1           JSONL lines
+       actual   = 15
+       expected = 15
+[OK ] windows-1       JSONL lines
+       actual   = 1
+       expected = 1
+[OK ] offline-test    JSONL lines
+       actual   = 6
+       expected = 6
+[OK ] windows-live    JSONL lines
+       actual   = 267
+       expected = 267
+
+[9] JSONL records have server-generated received_at
+[OK ] dev-1           first record has received_at = True
+[OK ] windows-1       first record has received_at = True
+[OK ] offline-test    first record has received_at = True
+[OK ] windows-live    first record has received_at = True
+
+[10] Attack matrix evidence files
+[OK ] attack_matrix_extended.txt present and parseable
+[OK ] attack_matrix_anchored.txt present and parseable
+
+[11] Benchmark evidence files
+[OK ] benchmark_ci.txt (633 bytes)
+[OK ] bench_baselines.txt (282 bytes)
+[OK ] bench_verify_ci.txt (267 bytes)
+[OK ] threshold_sensitivity.txt (350 bytes)
+[OK ] tier_distribution.txt (211 bytes)
+[OK ] storage_footprint.txt (71 bytes)
+
+[12] Environment (Section V-A)
+[OK ] Python version
+       actual   = 3.14.6
+       expected = 3.14.6
+[OK ] SQLite version
+       actual   = 3.53.4
+       expected = 3.53.4
+
+========================================================================
+TOTAL: 54 passed, 0 failed
+========================================================================
+
+Done.

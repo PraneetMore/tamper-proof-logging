@@ -1,0 +1,10 @@
+Adaptive and keyed attack matrix
+
+  privileged offline attacker (keyed chain)       100/100
+  adaptive attacker (unkeyed chain)                  0/100
+  adaptive attacker (keyed chain)                  100/100
+
+Interpretation:
+  - Keyed chain detects the privileged offline attacker.
+  - Adaptive attacker defeats the unkeyed chain (0/100).
+  - Keyed chain defeats the adaptive attacker (100/100).

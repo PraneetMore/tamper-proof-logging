@@ -1,0 +1,11 @@
+Attack-class test (100 trials each)
+
+  modification          detected 5000/5000  recall=100.00%
+  deletion              detected 5000/5000  recall=100.00%
+  insertion_inside      detected 5000/5000  recall=100.00%
+  control               false positives 0/5000  FPR=0.00%
+
+Documented out-of-scope attacks (not tested):
+  insertion outside segment
+  reordering of equal-length entries
+  truncation beyond last checkpoint

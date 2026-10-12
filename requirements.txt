@@ -1,0 +1,12 @@
+# Core dependencies
+requests>=2.31.0
+flask>=2.3.0
+flask-cors>=4.0.0
+
+# Windows only (will be conditional)
+pywin32>=306; sys_platform == 'win32'
+
+# Linux only (will be conditional)
+python3-audit>=1.0; sys_platform == 'linux'
+psutil>=5.9.0
+psutil>=5.9.0

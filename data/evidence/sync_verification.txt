@@ -1,0 +1,15 @@
+=== SQLite checkpoints ===
+  dev-1           15
+  windows-1       1
+  offline-test    6
+  windows-live    267
+
+=== JSONL checkpoints ===
+    15 data/server_store/dev-1.jsonl
+     6 data/server_store/offline-test.jsonl
+     1 data/server_store/windows-1.jsonl
+   267 data/server_store/windows-live.jsonl
+   289 total
+
+=== Digest verification ===
+Checked 289 checkpoints. 0 mismatches.

@@ -1,0 +1,2 @@
+per-entry commits                  18,570 logs/sec   db=41.23 MB
+batched commits (10k)              46,691 logs/sec   db=41.20 MB
