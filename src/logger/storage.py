@@ -79,12 +79,13 @@ class Storage:
         with self._conn() as c:
             c.execute("""
                 INSERT OR REPLACE INTO entries
-                (entry_index, device_id, timestamp, tier, algorithm, content,
+                (entry_index, device_id, timestamp, tier, algorithm, content, event_type,
                  leaf_hash, prev_hash, chain_hash)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?,?)
             """, (
                 entry.index, device_id, entry.timestamp, entry.tier,
                 entry.algorithm, entry.content,
+                getattr(entry, "event_type","unknown"),
                 entry.leaf_hash_hex, entry.prev_hash_hex, entry.chain_hash_hex,
             ))
             c.commit()
