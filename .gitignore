@@ -47,3 +47,7 @@ Thumbs.db
 *.pem
 data/*key*
 data/verifier_k0.bin
+*.key
+*.pem
+data/*.bak*
+experiments_v2/bench_tmp/
