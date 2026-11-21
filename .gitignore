@@ -51,3 +51,7 @@ data/verifier_k0.bin
 *.pem
 data/*.bak*
 experiments_v2/bench_tmp/
+*.key
+*.pem
+data/*.bak*
+experiments_v2/bench_tmp/
