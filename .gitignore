@@ -43,3 +43,7 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+*.key
+*.pem
+data/*key*
+data/verifier_k0.bin

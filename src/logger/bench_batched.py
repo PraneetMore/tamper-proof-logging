@@ -1,5 +1,5 @@
 """
-Compare per-entry commits vs batched commits for the persistent pipeline.
+Compare single-transaction vs chunked commits for the persistent pipeline.
 """
 import time
 from pathlib import Path
@@ -42,7 +42,7 @@ def run(use_batched, n=50_000, batch_size=1_000, commit_every=10_000):
 
 
 if __name__ == "__main__":
-    for label, flag in [("per-entry commits", False),
+    for label, flag in [("single transaction", False),
                         ("batched commits (10k)", True)]:
         tp, size = run(flag)
         print(f"{label:26} {tp:>14,.0f} logs/sec   db={size/1024/1024:.2f} MB")
