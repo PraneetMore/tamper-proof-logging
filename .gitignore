@@ -55,3 +55,8 @@ experiments_v2/bench_tmp/
 *.pem
 data/*.bak*
 experiments_v2/bench_tmp/
+data/*.db
+data/*.db-*
+data/*.bak*
+data/tls/
+data/*.jsonl
